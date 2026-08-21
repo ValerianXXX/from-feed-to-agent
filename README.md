@@ -69,6 +69,8 @@ The check performs TypeScript validation, a production build, publication-trace 
 - [Share-ready social carousel — PDF](https://valerianxxx.github.io/from-feed-to-agent/downloads/from_feed_to_agent_linkedin_carousel_20260820.pdf)
 - [Privacy-safe public data bundle](https://valerianxxx.github.io/from-feed-to-agent/downloads/from_feed_to_agent_public_data_20260820.zip)
 
+Verify any downloaded artifact against [`SHA256SUMS.txt`](SHA256SUMS.txt).
+
 ## Privacy and evidence boundary
 
 The repository excludes participant-level survey responses, birth fields, exact response timestamps, account identifiers, raw logged-in browser captures, local file paths, and exact private-session prompts. Public rows are derived research outputs with explicit missing-state handling.

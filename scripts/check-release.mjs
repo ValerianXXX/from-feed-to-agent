@@ -1,4 +1,5 @@
 import { access, readFile, readdir } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { extname, join, relative } from "node:path";
 
 const root = new URL("../", import.meta.url);
@@ -50,6 +51,21 @@ for (const name of downloads) {
   try { await access(join(rootPath, "public", "downloads", name)); }
   catch { failures.push(`missing public/downloads/${name}`); }
 }
+
+const checksumLines = (await readFile(join(rootPath, "SHA256SUMS.txt"), "utf8"))
+  .trim()
+  .split(/\r?\n/);
+const checksums = new Map(checksumLines.map((line) => {
+  const match = line.match(/^([a-f0-9]{64})  (.+)$/);
+  return match ? [match[2], match[1]] : [line, "INVALID"];
+}));
+for (const name of downloads) {
+  const digest = createHash("sha256")
+    .update(await readFile(join(rootPath, "public", "downloads", name)))
+    .digest("hex");
+  if (checksums.get(name) !== digest) failures.push(`SHA256SUMS.txt does not match ${name}`);
+}
+if (checksums.size !== downloads.length) failures.push(`SHA256SUMS.txt contains ${checksums.size} entries; expected ${downloads.length}`);
 
 const expectedRows = {
   "study_a_observation_features_public.csv": 192,
