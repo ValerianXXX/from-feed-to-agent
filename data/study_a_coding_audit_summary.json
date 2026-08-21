@@ -1,0 +1,9 @@
+{
+  "audit_sample_n": 48,
+  "formal_observations_n": 192,
+  "sample_share": 0.25,
+  "stratification": "surface × category × stage × round",
+  "single_coder": true,
+  "inter_rater_reliability_available": false,
+  "interpretation": "Protocol-consistency audit; not independent coder agreement."
+}

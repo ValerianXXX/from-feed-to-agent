@@ -1,0 +1,26 @@
+{
+  "title": "From Feed to Agent — public analysis summary",
+  "analysis_date": "2026-08-20",
+  "formal_observations": 192,
+  "surfaces": 4,
+  "rounds": 2,
+  "response_states": {
+    "search_results_captured": 96,
+    "initial_answers_generated": 88,
+    "generation_failures_with_fallback": 8
+  },
+  "named_validation_checks": {
+    "total": 136,
+    "verified": 60,
+    "unclear_or_unsupported": 36,
+    "not_covered": 37,
+    "incorrect": 3
+  },
+  "coding_audit_rows": 48,
+  "bootstrap": {
+    "resamples": 10000,
+    "cluster_unit": "24 frozen queries",
+    "seed": 20260820
+  },
+  "interpretation": "Surface-specific descriptive results inside captured evidence boundaries."
+}

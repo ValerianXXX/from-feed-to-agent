@@ -1,0 +1,7 @@
+﻿platform_a,platform_b,frozen_query_pairs_n,mean_criterion_coverage_difference_a_minus_b,cluster_bootstrap_ci_low,cluster_bootstrap_ci_high,interpretation_boundary
+TikTok,YouTube,24,0.1820767195767196,0.0865575396825397,0.27796792328042325,Matched frozen-task descriptive contrast across different evidence boundaries; not a causal or population comparison.
+TikTok,Google AI Mode,24,-0.2931547619047619,-0.38395337301587307,-0.20461309523809523,Matched frozen-task descriptive contrast across different evidence boundaries; not a causal or population comparison.
+TikTok,ChatGPT,24,-0.32509920634920636,-0.4206845238095238,-0.23298611111111112,Matched frozen-task descriptive contrast across different evidence boundaries; not a causal or population comparison.
+YouTube,Google AI Mode,24,-0.4752314814814815,-0.5637070105820106,-0.385896164021164,Matched frozen-task descriptive contrast across different evidence boundaries; not a causal or population comparison.
+YouTube,ChatGPT,24,-0.507175925925926,-0.5952050264550265,-0.4095899470899471,Matched frozen-task descriptive contrast across different evidence boundaries; not a causal or population comparison.
+Google AI Mode,ChatGPT,24,-0.03194444444444444,-0.07242063492063493,0.0013392857142857095,Matched frozen-task descriptive contrast across different evidence boundaries; not a causal or population comparison.

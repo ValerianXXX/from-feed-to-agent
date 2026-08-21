@@ -1,0 +1,11 @@
+{
+  "raw_submissions_preserved_privately": 149,
+  "primary_layer_n": 73,
+  "expanded_sensitivity_layer_n": 122,
+  "layer_relationship": "The expanded layer includes all 73 primary respondents plus 49 additional respondents.",
+  "contains_participant_level_rows": false,
+  "contains_birth_fields": false,
+  "contains_timestamps": false,
+  "interpretation": "Anonymous convenience-sample retrospective choices; descriptive signals, not population estimates.",
+  "source_workbook_sha256": "986f0c304ac6a1b955227f8dc5143e8bc14950ebd2c191f3e9586589c33a44a2"
+}

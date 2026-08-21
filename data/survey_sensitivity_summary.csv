@@ -1,0 +1,11 @@
+﻿metric_group,items_n,strict_expanded_spearman,max_absolute_pct_point_delta,top_item_strict,top_item_expanded
+handoff_preference,3,1.0,2.088479676622501,Carry them only after I approve the handoff,Carry them only after I approve the handoff
+improvement_need,11,0.8032057643041954,5.314508723599632,Provide direct links or citations to original sources,Provide direct links or citations to original sources
+source_used,9,0.7,7.309678868178759,TikTok,TikTok
+source_first,9,0.8485187356062978,4.0865384615384635,TikTok,TikTok
+source_most_useful,9,0.8982125735425058,7.148864592094196,TikTok,ChatGPT or another AI assistant
+source_most_trusted,9,0.9110169491525424,6.680161943319837,TikTok,TikTok
+stage_preference_discovery,6,0.9428571428571428,3.0653492027846396,People/community,People/community
+stage_preference_comparison,6,0.6377481392176932,6.9054569952840765,Feed/video,People/community
+stage_preference_validation,6,0.5852390484520126,3.0541208174264534,People/community,People/community
+stage_preference_shortlist,6,0.9428571428571428,3.6043116999775417,Retailer/review site,Retailer/review site

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this research, please cite it using the metadata below."
+title: "From Feed to Agent: The Evidence Handoff"
+type: dataset
+authors:
+  - family-names: Xu
+    given-names: Sihan
+version: 1.0.0
+date-released: 2026-08-21
+repository-code: "https://github.com/ValerianXXX/from-feed-to-agent"
+url: "https://valerianxxx.github.io/from-feed-to-agent/"
+abstract: "Independent product-strategy research on evidence handoffs across consumer discovery, review, synthesis, and decision-structuring surfaces."
+keywords:
+  - product strategy
+  - consumer research
+  - evidence provenance
+  - AI-assisted decisions
+license: LicenseRef-All-Rights-Reserved

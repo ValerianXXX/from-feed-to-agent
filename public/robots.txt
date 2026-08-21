@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://valerianxxx.github.io/from-feed-to-agent/sitemap.xml

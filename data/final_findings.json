@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "title": "From Feed to Agent — Evidence Handoff Product Strategy",
+    "author": "Sihan Xu",
+    "analysis_date": "2026-08-20",
+    "formal_observations": 192,
+    "surfaces": 4,
+    "rounds": 2,
+    "survey": {
+      "raw_submissions_preserved_privately": 149,
+      "primary_layer_n": 73,
+      "expanded_sensitivity_layer_n": 122,
+      "layer_relationship": "The expanded layer includes all 73 primary respondents plus 49 additional respondents.",
+      "contains_participant_level_rows": false,
+      "contains_birth_fields": false,
+      "contains_timestamps": false,
+      "interpretation": "Anonymous convenience-sample retrospective choices; descriptive signals, not population estimates.",
+      "source_workbook_sha256": "986f0c304ac6a1b955227f8dc5143e8bc14950ebd2c191f3e9586589c33a44a2"
+    }
+  },
+  "platform_roles": [
+    {
+      "platform": "TikTok",
+      "task_fit_role": "Origin-rich inspiration surface",
+      "observed_strength_and_risk": "High creator identity visibility and experiential language; weaker constraint coverage and sparse explicit incentive disclosure in captured captions.",
+      "product_implication": "Use for possibility discovery and creator context, then hand claims into a verifiable layer.",
+      "visible_boundary_criterion_coverage_mean": "0.6574570105820106",
+      "generation_rate_if_applicable": "",
+      "round_overlap_median": "0.38095238095238093",
+      "validation_incorrect_n": "0",
+      "interpretation_boundary": "Captured task-fit role; no cross-surface rank"
+    },
+    {
+      "platform": "YouTube",
+      "task_fit_role": "Depth-routing search surface",
+      "observed_strength_and_risk": "Direct channels and labeled sponsored modules are legible, but title/metadata alone often do not satisfy a complex scenario.",
+      "product_implication": "Use to choose which review to watch; this study did not score the videos themselves.",
+      "visible_boundary_criterion_coverage_mean": "0.47538029100529094",
+      "generation_rate_if_applicable": "",
+      "round_overlap_median": "0.5384615384615384",
+      "validation_incorrect_n": "0",
+      "interpretation_boundary": "Captured task-fit role; no cross-surface rank"
+    },
+    {
+      "platform": "Google AI Mode",
+      "task_fit_role": "Source-linked synthesis with an operational caveat",
+      "observed_strength_and_risk": "Generated answers usually covered constraints and exposed links, but 8/24 Round 2 tasks returned fallback results without an AI answer; three narrow validation errors were observed.",
+      "product_implication": "Use for synthesis only with generation-state handling and a verification queue for consequential claims.",
+      "visible_boundary_criterion_coverage_mean": "0.9506117724867725",
+      "generation_rate_if_applicable": "0.8333333333333334",
+      "round_overlap_median": "0.18607551693910174",
+      "validation_incorrect_n": "3",
+      "interpretation_boundary": "Captured task-fit role; no cross-surface rank"
+    },
+    {
+      "platform": "ChatGPT",
+      "task_fit_role": "Constraint organizer and decision canvas",
+      "observed_strength_and_risk": "Generated all 48 initial answers and consistently framed task constraints and trade-offs; the structured record did not preserve every source-button destination URL.",
+      "product_implication": "Use to structure the decision, while exporting durable claim-level links and creator provenance.",
+      "visible_boundary_criterion_coverage_mean": "0.9825562169312169",
+      "generation_rate_if_applicable": "1.0",
+      "round_overlap_median": "0.3226438816807523",
+      "validation_incorrect_n": "0",
+      "interpretation_boundary": "Captured task-fit role; no cross-surface rank"
+    }
+  ],
+  "response_states": {
+    "search_results_captured": 96,
+    "initial_answers_generated": 88,
+    "generation_failures_with_fallback": 8
+  },
+  "named_validation_checks": {
+    "total": 136,
+    "verified": 60,
+    "unclear_or_unsupported": 36,
+    "not_covered": 37,
+    "incorrect": 3
+  },
+  "survey_handoff_primary": {
+    "approve_each_handoff_pct": 41.1,
+    "automatic_handoff_pct": 35.6,
+    "no_cross_product_handoff_pct": 23.3
+  },
+  "product_thesis": "Build a consent-based evidence bridge that carries intent, preserves origin, exposes uncertainty, and makes verification portable.",
+  "roadmap": [
+    {
+      "opportunity": "Consent-based Intent Passport",
+      "horizon": "Build first"
+    },
+    {
+      "opportunity": "Portable Shortlist Snapshot",
+      "horizon": "Build next"
+    },
+    {
+      "opportunity": "Decision Canvas",
+      "horizon": "Build first"
+    },
+    {
+      "opportunity": "Claim-to-Proof Graph",
+      "horizon": "Build first"
+    },
+    {
+      "opportunity": "Verification Queue",
+      "horizon": "Build first"
+    },
+    {
+      "opportunity": "Origin-preserving Evidence Drawer",
+      "horizon": "Build next"
+    }
+  ],
+  "concept_status": "Evidence-backed concept; adoption, willingness-to-pay, and product-market-fit tests are next.",
+  "publication_boundaries": [
+    "Search findings cover captured visible result pages; videos were not watched.",
+    "Agent findings cover complete initial answers only.",
+    "Only six named validation tasks were truth-checked.",
+    "Survey results are anonymous convenience-sample descriptive signals."
+  ]
+}

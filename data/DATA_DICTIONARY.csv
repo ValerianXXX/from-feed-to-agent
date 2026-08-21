@@ -1,0 +1,14 @@
+table_or_field,public_definition,state_or_unit,interpretation_limit
+study_a_observation_features_public.csv,"192 derived rows, one per accepted formal observation",observation,"No raw DOM, transcript, exact input, account state, or capture path"
+study_a_metric_scores_long_public.csv,"3,264 metric-state rows preserving scored, missing, and inapplicable states",observation × metric,Missing and not applicable are not zero
+study_a_validation_claim_checks_public.csv,136 checks across six named validation tasks,named claim check,Not broad recommendation accuracy
+study_a_coding_audit_results_public.csv,48 stratified protocol-consistency audit rows,audited observation,Single coder; not inter-rater reliability
+verified,Captured claim matched the refreshed truth field,validation state,Does not imply general platform accuracy
+unclear_or_unsupported,Evidence did not support a confident verification,validation state,Does not mean false
+not_covered,The answer did not address the named check,validation state,Not a zero or an error
+incorrect,Captured claim contradicted the refreshed truth field,validation state,Does not estimate a platform-wide error rate
+INITIAL_RESPONSE_GENERATED,Complete initial answer appeared inside the captured agent boundary,response state,"One account, browser, and time window"
+GENERATION_FAILED_WITH_FALLBACK_RESULTS,Explicit generation failure with fallback results visible,response state,Fallback results were not recoded as an AI answer
+primary_layer_n,73 respondents meeting the frozen primary eligibility rules,survey layer,Convenience sample
+expanded_sensitivity_layer_n,"122 respondents, including all 73 in the primary layer",survey layer,"Nested sensitivity layer, not a second independent sample"
+technical_priority_index,impact × evidence strength × feasibility ÷ trust risk,technical heuristic,"Not demand, adoption, revenue, or PMF forecast"

@@ -1,0 +1,9 @@
+﻿platform,round,n,initial_response_generated_n,generation_failed_with_fallback_results_n,search_results_captured_n,initial_response_generation_rate,coding_version
+ChatGPT,1,24,24,0,0,1.0,study-a-coding-1.0-2026-08-20
+ChatGPT,2,24,24,0,0,1.0,study-a-coding-1.0-2026-08-20
+Google AI Mode,1,24,24,0,0,1.0,study-a-coding-1.0-2026-08-20
+Google AI Mode,2,24,16,8,0,0.6666666666666666,study-a-coding-1.0-2026-08-20
+TikTok,1,24,0,0,24,,study-a-coding-1.0-2026-08-20
+TikTok,2,24,0,0,24,,study-a-coding-1.0-2026-08-20
+YouTube,1,24,0,0,24,,study-a-coding-1.0-2026-08-20
+YouTube,2,24,0,0,24,,study-a-coding-1.0-2026-08-20
