@@ -1,0 +1,17 @@
+{
+  "$schema": "https://raw.githubusercontent.com/ValerianXXX/needradar/main/schemas/project-connection-v1.schema.json",
+  "schemaVersion": "1.0.0",
+  "projectId": "from-feed-to-agent",
+  "repository": "ValerianXXX/from-feed-to-agent",
+  "relationship": "METHOD_INPUT",
+  "connectionState": "DOCUMENTED_NO_RUNTIME_LINK",
+  "runtimeIntegration": "NONE",
+  "accepts": [],
+  "emits": ["PUBLIC_AGGREGATE_RESEARCH_ARTIFACT"],
+  "evidenceBoundary": "The publication contributes evidence-handoff and provenance patterns as one research artifact. Its rows or respondents must not be inflated into independent NeedRadar demand observations.",
+  "needradar": {
+    "ecosystemUrl": "https://github.com/ValerianXXX/needradar/blob/main/docs/ECOSYSTEM.md",
+    "projectRegistry": "https://raw.githubusercontent.com/ValerianXXX/needradar/main/data/project-registry.json",
+    "opportunityHandoffContract": "https://raw.githubusercontent.com/ValerianXXX/needradar/main/schemas/opportunity-handoff-v1.schema.json"
+  }
+}

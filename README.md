@@ -77,6 +77,12 @@ The repository excludes participant-level survey responses, birth fields, exact 
 
 See [LIMITATIONS.md](methodology/LIMITATIONS.md), [RESEARCH_CHARTER.md](methodology/RESEARCH_CHARTER.md), and the [data dictionary](data/DATA_DICTIONARY.csv) before reusing or interpreting the results.
 
+## NeedRadar method relationship
+
+This research contributes origin-preserving evidence, claim-to-proof, verification-state, and consent patterns to the [NeedRadar evidence-to-execution ecosystem](https://github.com/ValerianXXX/needradar/blob/main/docs/ECOSYSTEM.md).
+
+The relationship is method-level and metadata-only. NeedRadar must treat this publication as one research artifact rather than converting study rows or respondents into independent demand observations. See [`needradar-project.json`](needradar-project.json).
+
 ## Citation
 
 Use the repository's [`CITATION.cff`](CITATION.cff) metadata or cite:
