@@ -3,6 +3,7 @@ import { ReliabilityPanel } from "./ReliabilityPanel";
 import { ResearchExplorer } from "./ResearchExplorer";
 import { SurveyExplorer } from "./SurveyExplorer";
 import { ValidationPanel } from "./ValidationPanel";
+import { ResearchRound } from "./ResearchRound";
 import { platforms, roadmap } from "./research-data";
 
 const fileUrl = (name: string) => `${import.meta.env.BASE_URL}downloads/${name}`;
@@ -23,6 +24,7 @@ export default function Home() {
       <nav className="nav" aria-label="Primary navigation">
         <a className="wordmark" href="#top"><span>F/A</span><b>From Feed to Agent</b></a>
         <div className="nav-links">
+          <a href="#new-round">New pilot</a>
           <a href="#findings">Findings</a>
           <a href="#evidence">Evidence</a>
           <a href="#survey">Survey</a>
@@ -52,6 +54,8 @@ export default function Home() {
         <div><span>03</span><strong>2</strong><small>collection rounds</small></div>
         <div><span>04</span><strong>149</strong><small>survey submissions</small></div>
       </section>
+
+      <ResearchRound />
 
       <section className="section thesis" id="findings">
         <div className="section-number">01</div>

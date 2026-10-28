@@ -7,6 +7,14 @@
 
 Explore the interactive publication: **[valerianxxx.github.io/from-feed-to-agent](https://valerianxxx.github.io/from-feed-to-agent/)**
 
+## October 27 pilot
+
+A separate [dated protocol and collector](methodology/ROUND_2026-10-27.md) adds task completion, evidence retention, human intervention, elapsed observation time and attributable cost. The public viewer now lets you inspect each surface and its redacted observation notes.
+
+Eight task/surface pairs were planned; five queries were submitted, producing four usable observations. Google AI Mode produced two direct answers, with one scoped completion and one withheld for unsupported specificity. YouTube found relevant results but did not complete the requested artifacts inside the search-page boundary. ChatGPT returned a browser verification challenge; TikTok required age entry. Neither access gate was bypassed. No saved handoff or attributable cost was measured.
+
+This is one small pilot with new public prompts, not a directly comparable rerun or a model ranking. [Tasks](public/rounds/2026-10-27/tasks.json), [observations](public/rounds/2026-10-27/observations.json) and [results](methodology/ROUND_2026-10-27_RESULTS.md) preserve the boundaries. Historical findings below remain dated to August. The new website section has been prepared on this branch; publication requires separate approval.
+
 ## Research in one view
 
 The study compares four consumer-research surfaces across the same frozen task lattice. The central product opportunity is not another destination; it is an evidence handoff that carries intent, source origin, uncertainty, and proof between tools.
