@@ -1,0 +1,96 @@
+{
+  "version": "handoff-pilot-2026-10-27-v1",
+  "historicalComparison": "NOT_DIRECTLY_COMPARABLE",
+  "planned": 8,
+  "recorded": 8,
+  "surfaces": [
+    {
+      "surface": "ChatGPT",
+      "queriesSubmitted": 1,
+      "blocked": 2,
+      "answer": {
+        "observed": 0,
+        "yes": 0
+      },
+      "discovery": {
+        "observed": 0,
+        "yes": 0
+      },
+      "task": {
+        "observed": 0,
+        "yes": 0
+      },
+      "saved": {
+        "observed": 0,
+        "yes": 0
+      },
+      "costUsd": null
+    },
+    {
+      "surface": "Google AI Mode",
+      "queriesSubmitted": 2,
+      "blocked": 0,
+      "answer": {
+        "observed": 2,
+        "yes": 2
+      },
+      "discovery": {
+        "observed": 2,
+        "yes": 2
+      },
+      "task": {
+        "observed": 2,
+        "yes": 1
+      },
+      "saved": {
+        "observed": 2,
+        "yes": 0
+      },
+      "costUsd": null
+    },
+    {
+      "surface": "YouTube",
+      "queriesSubmitted": 2,
+      "blocked": 0,
+      "answer": {
+        "observed": 2,
+        "yes": 0
+      },
+      "discovery": {
+        "observed": 2,
+        "yes": 2
+      },
+      "task": {
+        "observed": 2,
+        "yes": 0
+      },
+      "saved": {
+        "observed": 2,
+        "yes": 0
+      },
+      "costUsd": null
+    },
+    {
+      "surface": "TikTok",
+      "queriesSubmitted": 0,
+      "blocked": 2,
+      "answer": {
+        "observed": 0,
+        "yes": 0
+      },
+      "discovery": {
+        "observed": 0,
+        "yes": 0
+      },
+      "task": {
+        "observed": 0,
+        "yes": 0
+      },
+      "saved": {
+        "observed": 0,
+        "yes": 0
+      },
+      "costUsd": null
+    }
+  ]
+}
