@@ -7,7 +7,22 @@
 
 Explore the interactive publication: **[valerianxxx.github.io/from-feed-to-agent](https://valerianxxx.github.io/from-feed-to-agent/)**
 
-## October 27 pilot
+## October 29 outcome pilot
+
+A new [24-task catalog and protocol](methodology/ROUND_2026-10-29.md) separates observations, fact coding, source provenance, completion and actual file exports. Six tasks were frozen before collection on four consumer interfaces. The [results and limitations](methodology/ROUND_2026-10-29_RESULTS.md) cover 18 real browser queries and six access-blocked TikTok slots. Inputs are synthetic shopping needs; the observations are actual interface results.
+
+| Surface | Visible answers | Frozen task and exact-reference gate | Downloaded files |
+|---|---:|---:|---:|
+| ChatGPT | 6/6 | 3/6 | 1/6 |
+| Google AI Mode | 6/6 | 2/6 | 2/6 |
+| YouTube Search | 0/6 within search-page scope | 0/6 within that scope | 0/6 |
+| TikTok Search | Not assessed: age-entry gate | Not assessed | Not assessed |
+
+These are bounded observations, not platform success rates. The exact-reference gate conservatively excludes alternative regional official URLs; two ChatGPT captures exceeded the 120-second collection window, including one of its three content passes. No independent second coder or attributable cost is available. One downloaded Google note preserves an unsupported installation claim. A saved file is not proof of a correct result.
+
+The branch includes a filterable viewer, source inspection, actual artifact downloads and a hash-checked append-only [ledger](public/rounds/2026-10-29/ledger.jsonl). No new service or credentials are required. [Verification](methodology/ROUND_2026-10-29_VERIFICATION.md) distinguishes collector checks from research findings. This new section is prepared for review; the live website has not been republished.
+
+## October 27 pilot (preserved)
 
 A separate [dated protocol and collector](methodology/ROUND_2026-10-27.md) adds task completion, evidence retention, human intervention, elapsed observation time and attributable cost. The public viewer now lets you inspect each surface and its redacted observation notes.
 
@@ -65,7 +80,7 @@ Run the same checks used in continuous integration:
 pnpm check
 ```
 
-The check performs TypeScript validation, a production build, publication-trace scanning, download inventory checks, and row-count verification for the four principal public datasets.
+The check performs TypeScript validation, a production build, publication-trace scanning, download inventory checks, historical row-count verification, ledger/hash and export-file validation, and collector tests. Follow the [V2 collector commands](methodology/ROUND_2026-10-29.md#run-the-collector) to collect a separately frozen round; never replace an initial observation with a retry.
 
 ## Public artifacts
 
@@ -81,7 +96,7 @@ Verify any downloaded artifact against [`SHA256SUMS.txt`](SHA256SUMS.txt).
 
 ## Privacy and evidence boundary
 
-The repository excludes participant-level survey responses, birth fields, exact response timestamps, account identifiers, raw logged-in browser captures, local file paths, and exact private-session prompts. Public rows are derived research outputs with explicit missing-state handling.
+The repository excludes participant-level survey responses, birth fields, private account identifiers, raw logged-in browser captures, local file paths, and exact private-session prompts. The October 29 public synthetic-task round includes its newly authored prompts, collection timestamps and three inspected platform exports, with no participant data. Public rows are derived research outputs with explicit missing-state handling.
 
 See [LIMITATIONS.md](methodology/LIMITATIONS.md), [RESEARCH_CHARTER.md](methodology/RESEARCH_CHARTER.md), and the [data dictionary](data/DATA_DICTIONARY.csv) before reusing or interpreting the results.
 

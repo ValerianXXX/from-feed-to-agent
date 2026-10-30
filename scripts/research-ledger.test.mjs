@@ -94,6 +94,11 @@ test('timing cannot run backwards and subscription cost is not zero',()=>{
   const row=sample(); row.timing.finishedAt='2026-10-29T22:59:59.000Z'; assert.throws(()=>readEvents(build(row),catalog),/timing/);
   const cost=sample(); cost.cost={usd:0,basis:'SUBSCRIPTION'}; assert.throws(()=>readEvents(build(cost),catalog),/Unknown cost/);
 });
+test('a late capture remains visible as a protocol deviation without inventing model latency',()=>{
+  const row=sample(); row.timing.finishedAt='2026-10-29T23:02:15.000Z';
+  const result=summarize(build(row),catalog);
+  assert.equal(result.observations[0].completion,true); assert.equal(result.observations[0].captureWindowWithinLimit,false); assert.equal(result.surfaces[1].captureWindowExceeded,1);
+});
 test('second coding preserves disagreement without silently selecting a winner',()=>{
   const second=coding(); second.coder={id:'coder-two',kind:'INDEPENDENT_HUMAN'}; second.facts[0].verdict='INCORRECT';
   const events=add(build(),{type:'CODING',observationId:sample().id,coding:second});

@@ -1,0 +1,1377 @@
+{
+  "schema": "FEED_OUTCOME_LEDGER_V2",
+  "roundId": "2026-10-29",
+  "catalogHash": "5a5c603fcd5131e901964ccb82bff68a4180032aee92030bc8a559303c035841",
+  "ledgerHead": "0e4732d50cb3972c331d07d0f9110acd14aebb012d76a557f726e8c5d90c6f10",
+  "historicalComparison": "NOT_DIRECTLY_COMPARABLE",
+  "catalogTasks": 24,
+  "pilotTasks": 6,
+  "planned": 24,
+  "recorded": 24,
+  "unrecorded": 0,
+  "surfaces": [
+    {
+      "surface": "ChatGPT",
+      "planned": 6,
+      "recorded": 6,
+      "submitted": 6,
+      "observed": 6,
+      "blocked": 0,
+      "notRun": 0,
+      "unrecorded": 0,
+      "answer": {
+        "measured": 6,
+        "yes": 6
+      },
+      "discovery": {
+        "measured": 6,
+        "yes": 6
+      },
+      "completion": {
+        "measured": 6,
+        "yes": 3
+      },
+      "export": {
+        "measured": 6,
+        "yes": 1
+      },
+      "disagreements": 0,
+      "independentReviews": 0,
+      "captureWindowExceeded": 2,
+      "costUsd": null
+    },
+    {
+      "surface": "Google AI Mode",
+      "planned": 6,
+      "recorded": 6,
+      "submitted": 6,
+      "observed": 6,
+      "blocked": 0,
+      "notRun": 0,
+      "unrecorded": 0,
+      "answer": {
+        "measured": 6,
+        "yes": 6
+      },
+      "discovery": {
+        "measured": 6,
+        "yes": 6
+      },
+      "completion": {
+        "measured": 6,
+        "yes": 2
+      },
+      "export": {
+        "measured": 6,
+        "yes": 2
+      },
+      "disagreements": 0,
+      "independentReviews": 0,
+      "captureWindowExceeded": 0,
+      "costUsd": null
+    },
+    {
+      "surface": "YouTube Search",
+      "planned": 6,
+      "recorded": 6,
+      "submitted": 6,
+      "observed": 6,
+      "blocked": 0,
+      "notRun": 0,
+      "unrecorded": 0,
+      "answer": {
+        "measured": 6,
+        "yes": 0
+      },
+      "discovery": {
+        "measured": 6,
+        "yes": 6
+      },
+      "completion": {
+        "measured": 6,
+        "yes": 0
+      },
+      "export": {
+        "measured": 6,
+        "yes": 0
+      },
+      "disagreements": 0,
+      "independentReviews": 0,
+      "captureWindowExceeded": 0,
+      "costUsd": null
+    },
+    {
+      "surface": "TikTok Search",
+      "planned": 6,
+      "recorded": 6,
+      "submitted": 0,
+      "observed": 0,
+      "blocked": 6,
+      "notRun": 0,
+      "unrecorded": 0,
+      "answer": {
+        "measured": 0,
+        "yes": 0
+      },
+      "discovery": {
+        "measured": 0,
+        "yes": 0
+      },
+      "completion": {
+        "measured": 0,
+        "yes": 0
+      },
+      "export": {
+        "measured": 0,
+        "yes": 0
+      },
+      "disagreements": 0,
+      "independentReviews": 0,
+      "captureWindowExceeded": 0,
+      "costUsd": null
+    }
+  ],
+  "observations": [
+    {
+      "observationId": "google-wa-i-01",
+      "taskId": "WA-I-01",
+      "surface": "Google AI Mode",
+      "status": "OBSERVED",
+      "note": "A comparison table supplied all four required protection facts, rain-use trade-offs and a shopper question. Apple water guidance was linked; the observed Sony link led to a different specifications page. The answer reported no export. Exact-reference completion is withheld, although the required facts match the frozen references. Additional promotional or durability wording was not certified.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 1,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 11608,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "apple-audio",
+          "url": "https://support.apple.com/en-us/105046",
+          "title": "Apple Support",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "OFFICIAL",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-2",
+          "url": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-1000xm5/specifications",
+          "title": "Sony",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "sony-audio",
+          "url": "https://helpguide.sony.net/mdr/2963/v1/en/contents/TP1000781399.html",
+          "title": "Sony WF-1000XM5 water resistance",
+          "locator": "On water resistant performance of the headset",
+          "kind": "OFFICIAL",
+          "origin": "REFERENCE_CHECK"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "google-wa-c-01",
+      "taskId": "WA-C-01",
+      "surface": "Google AI Mode",
+      "status": "OBSERVED",
+      "note": "The answer separated case and earbud ratings and excluded swimming. Its prose also called IP54 dustproof and used categorical rain-damage language beyond the bounded ratings. The linked Apple and Sony pages differed from the frozen references. No export was produced; the four selected facts are correct, but this does not certify every statement in the response.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 20067,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "surface-1",
+          "url": "https://support.apple.com/en-us/111834",
+          "title": "AirPods Pro 2 with MagSafe Charging Case (USB-C) - Tech Specs - Apple Support",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-2",
+          "url": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wf1000xm5-s",
+          "title": "Sony Premium Truly Wireless Noise Cancelling Earbuds | Silver | WF1000XM5/S | Sony Electronics",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "apple-audio",
+          "url": "https://support.apple.com/en-us/105046",
+          "title": "Apple AirPods water resistance",
+          "locator": "USB-C and Lightning model lists; swimming and drying cautions",
+          "kind": "OFFICIAL",
+          "origin": "REFERENCE_CHECK"
+        },
+        {
+          "id": "sony-audio",
+          "url": "https://helpguide.sony.net/mdr/2963/v1/en/contents/TP1000781399.html",
+          "title": "Sony WF-1000XM5 water resistance",
+          "locator": "On water resistant performance of the headset",
+          "kind": "OFFICIAL",
+          "origin": "REFERENCE_CHECK"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "google-rv-i-01",
+      "taskId": "RV-I-01",
+      "surface": "Google AI Mode",
+      "status": "OBSERVED",
+      "note": "The answer recognized insufficient front clearance, a 5 GHz-only network and continuing manual tank work. It introduced a competing 0.8 m overhead requirement without a verified matching official version, so that fact remains uncheckable. A real Markdown export was downloaded and hashed; it retained the conflicting clearance claim. A retailer-hosted manual and a different official Wi-Fi page were linked.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": false,
+      "export": true,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 3,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 1,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 29315,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "surface-1",
+          "url": "https://www.appliancesdirect.co.uk/files/pdf/Roborock%20S8%20Pro%20Ultra%20FCC%20EN%20User%20Manual.pdf",
+          "title": "Manufacturer manual linked through a retailer mirror",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-2",
+          "url": "https://support.roborock.com/hc/en-us/articles/41519289560217-Our-Robot-2-4G-vs-5G-Wi-Fi-Band-Support",
+          "title": "Roborock Wi-Fi support",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "roborock-manual",
+          "url": "https://support.roborock.com/hc/en-us/article_attachments/17820920870809",
+          "title": "Roborock S8 Pro Ultra FCC English manual",
+          "locator": "Printed pages 8-9 and 12: dock placement, Wi-Fi and dirty-water tank",
+          "kind": "OFFICIAL",
+          "origin": "REFERENCE_CHECK"
+        }
+      ],
+      "artifact": {
+        "path": "artifacts/google-rv-i-01.md",
+        "sha256": "e59051ef57a892d3216c3aa61b64783f523079daece663ac5e7d043d6c5da447",
+        "bytes": 2166,
+        "mediaType": "text/markdown",
+        "provenance": "PLATFORM_EXPORT",
+        "savedAt": "2026-10-30T00:05:23.704Z"
+      }
+    },
+    {
+      "observationId": "google-rv-v-01",
+      "taskId": "RV-V-01",
+      "surface": "Google AI Mode",
+      "status": "OBSERVED",
+      "note": "The response correctly rejected unchanged installation: 0.7 m front, 0.5 m above, 2.4 GHz-only Wi-Fi and manual dirty-water maintenance were present. It generated a real Markdown file that was downloaded and hashed. The cited manual was retailer-hosted and the Wi-Fi page differed from the catalog, so the exact-reference gate remains unmet despite the four correct facts.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": false,
+      "export": true,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 20750,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "surface-1",
+          "url": "https://www.appliancesdirect.co.uk/files/pdf/Roborock%20S8%20Pro%20Ultra%20FCC%20EN%20User%20Manual.pdf",
+          "title": "Manufacturer manual linked through a retailer mirror",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-2",
+          "url": "https://support.roborock.com/hc/en-us/articles/41519289560217-Our-Robot-2-4G-vs-5G-Wi-Fi-Band-Support",
+          "title": "Roborock Wi-Fi support",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "roborock-manual",
+          "url": "https://support.roborock.com/hc/en-us/article_attachments/17820920870809",
+          "title": "Roborock S8 Pro Ultra FCC English manual",
+          "locator": "Printed pages 8-9 and 12: dock placement, Wi-Fi and dirty-water tank",
+          "kind": "OFFICIAL",
+          "origin": "REFERENCE_CHECK"
+        }
+      ],
+      "artifact": {
+        "path": "artifacts/google-rv-v-01.md",
+        "sha256": "c773cf4592a79725b07622e1efe39814d25d08ef96accc0321df8c52591373f3",
+        "bytes": 1459,
+        "mediaType": "text/markdown",
+        "provenance": "PLATFORM_EXPORT",
+        "savedAt": "2026-10-30T00:06:22.978Z"
+      }
+    },
+    {
+      "observationId": "google-sw-i-01",
+      "taskId": "SW-I-01",
+      "surface": "Google AI Mode",
+      "status": "OBSERVED",
+      "note": "The answer distinguished 50 m and 100 m ratings from permitted activities, excluded Series 10 for the requested scuba use and stated the Ultra 40 m activity limit. It linked the frozen Apple guide, gave a band-selection question and reported no export. Completion is limited to the four required facts and three criteria; extra app, band and failure claims were not comprehensively audited.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": true,
+      "export": false,
+      "evidenceSources": 1,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 56544,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "apple-watch",
+          "url": "https://support.apple.com/en-us/109522",
+          "title": "Apple water resistance",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "OFFICIAL",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "google-sw-s-01",
+      "taskId": "SW-S-01",
+      "surface": "Google AI Mode",
+      "status": "OBSERVED",
+      "note": "The response conditionally shortlisted Ultra 2, excluded Series 10 from the combined swimming/scuba requirement, retained the 50 m/100 m ratings and 40 m scuba limit, and asked about software cost. The frozen Apple guide was linked. It reported no export. The bounded result does not certify broader diving advice or every extra product claim.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": true,
+      "export": false,
+      "evidenceSources": 1,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 29523,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "apple-watch",
+          "url": "https://support.apple.com/en-us/109522",
+          "title": "Apple water resistance",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "OFFICIAL",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "youtube-wa-i-01",
+      "taskId": "WA-I-01",
+      "surface": "YouTube Search",
+      "status": "OBSERVED",
+      "note": "The exact prompt returned relevant product review or comparison video titles. Only the search page was inspected. No video facts, decision note or saved handoff were established; sponsored results were not used as independent supporting evidence.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": false,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 0,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 4
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 8488,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "search-1",
+          "url": "https://www.youtube.com/watch?v=xHNqdsJf1UM",
+          "title": "SHOWDOWN: AirPods Pro 2 VS SONY WF1000XM5!",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "search-2",
+          "url": "https://www.youtube.com/watch?v=zHKncunhxOk",
+          "title": "AIRPODS PRO 2 vs SONY WF-1000XM5 (Tested and Compared!)",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "youtube-wa-c-01",
+      "taskId": "WA-C-01",
+      "surface": "YouTube Search",
+      "status": "OBSERVED",
+      "note": "The exact prompt returned relevant product review or comparison video titles. Only the search page was inspected. No video facts, decision note or saved handoff were established; sponsored results were not used as independent supporting evidence.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": false,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 0,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 4
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 22823,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "search-1",
+          "url": "https://www.youtube.com/watch?v=zHKncunhxOk",
+          "title": "AIRPODS PRO 2 vs SONY WF-1000XM5 (Tested and Compared!)",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "search-2",
+          "url": "https://www.youtube.com/watch?v=xHNqdsJf1UM",
+          "title": "SHOWDOWN: AirPods Pro 2 VS SONY WF1000XM5!",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "youtube-rv-i-01",
+      "taskId": "RV-I-01",
+      "surface": "YouTube Search",
+      "status": "OBSERVED",
+      "note": "The exact prompt returned relevant product review or comparison video titles. Only the search page was inspected. No video facts, decision note or saved handoff were established; sponsored results were not used as independent supporting evidence.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": false,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 0,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 4
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 22967,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "search-1",
+          "url": "https://www.youtube.com/watch?v=MLFXKy6j0K0",
+          "title": "Robot Vacuum Repair – Roborock S8 Pro Ultra Dock Station issues",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "search-2",
+          "url": "https://www.youtube.com/watch?v=evC-dij0zOE",
+          "title": "Roborock S8 Pro Ultra Review 2026: Is The Ultimate Robot Vacuum Still Worth It?",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "youtube-rv-v-01",
+      "taskId": "RV-V-01",
+      "surface": "YouTube Search",
+      "status": "OBSERVED",
+      "note": "The exact prompt returned relevant product review or comparison video titles. Only the search page was inspected. No video facts, decision note or saved handoff were established; sponsored results were not used as independent supporting evidence.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": false,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 0,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 4
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 65726,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "search-1",
+          "url": "https://www.youtube.com/watch?v=evC-dij0zOE",
+          "title": "Roborock S8 Pro Ultra Review 2026: Is The Ultimate Robot Vacuum Still Worth It?",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "search-2",
+          "url": "https://www.youtube.com/watch?v=3Ml8TIceGVA",
+          "title": "Solve your biggest problem! S8 Pro Ultra",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "youtube-sw-i-01",
+      "taskId": "SW-I-01",
+      "surface": "YouTube Search",
+      "status": "OBSERVED",
+      "note": "The exact prompt returned relevant product review or comparison video titles. Only the search page was inspected. No video facts, decision note or saved handoff were established; sponsored results were not used as independent supporting evidence.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": false,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 0,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 4
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 20018,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "search-1",
+          "url": "https://www.youtube.com/watch?v=KA-HvVKr2g0",
+          "title": "Apple Watch Ultra vs Series 10: Which is Better for Swimmers?",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "search-2",
+          "url": "https://www.youtube.com/watch?v=2ujf18PDcpo",
+          "title": "How A Pro Scuba Diver ACTUALLY Uses The Apple Watch Ultra",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "youtube-sw-s-01",
+      "taskId": "SW-S-01",
+      "surface": "YouTube Search",
+      "status": "OBSERVED",
+      "note": "The exact prompt returned relevant product review or comparison video titles. Only the search page was inspected. No video facts, decision note or saved handoff were established; sponsored results were not used as independent supporting evidence.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": false,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 0,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 4
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 38424,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "search-1",
+          "url": "https://www.youtube.com/watch?v=KA-HvVKr2g0",
+          "title": "Apple Watch Ultra vs Series 10: Which is Better for Swimmers?",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "search-2",
+          "url": "https://www.youtube.com/watch?v=ievxHoevSQo",
+          "title": "Can the Apple Watch Series 10 track swimming laps?",
+          "locator": "Visible search result title; video not opened or watched",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "chatgpt-wa-i-01",
+      "taskId": "WA-I-01",
+      "surface": "ChatGPT",
+      "status": "OBSERVED",
+      "note": "The temporary chat returned the four required protection facts, two rain-use trade-offs and a case-storage question. It explicitly declined swimming use and reported no export. A regional Apple guidance URL and the frozen Sony manual were linked; regional URL differences withhold the exact-reference gate. Initial page hydration and input activation needed extra operator actions; only one user message and one answer were observed.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "EXISTING_ACCOUNT_TEMPORARY_CHAT",
+        "model": null,
+        "productBuild": null,
+        "visibleEffort": "Medium; temporary preloader initially displayed Instant"
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 1,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 116824,
+      "captureWindowWithinLimit": true,
+      "interventions": 2,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "surface-1",
+          "url": "https://support.apple.com/en-us/111834",
+          "title": "Apple — AirPods Pro 2 (USB-C) specifications",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-2",
+          "url": "https://support.apple.com/en-ie/105046",
+          "title": "Apple — Water resistance and swimming restrictions",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-3",
+          "url": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wf1000xm5-b",
+          "title": "Sony — WF-1000XM5 specifications",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "sony-audio",
+          "url": "https://helpguide.sony.net/mdr/2963/v1/en/contents/TP1000781399.html",
+          "title": "Sony — Official IPX4 and charging-case limitations",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "OFFICIAL",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "apple-audio",
+          "url": "https://support.apple.com/en-us/105046",
+          "title": "Apple AirPods water resistance",
+          "locator": "USB-C and Lightning model lists; swimming and drying cautions",
+          "kind": "OFFICIAL",
+          "origin": "REFERENCE_CHECK"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "chatgpt-wa-c-01",
+      "taskId": "WA-C-01",
+      "surface": "ChatGPT",
+      "status": "OBSERVED",
+      "note": "The response correctly separated earbuds and cases and rejected swimming. Sources included a regional Apple page, Sony product details and a general precaution link whose path named a different headphone family. The four selected facts match the references, but exact-source completion is withheld and the extra precaution link is not treated as model-specific proof. No export was produced.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "EXISTING_ACCOUNT_TEMPORARY_CHAT",
+        "model": null,
+        "productBuild": null,
+        "visibleEffort": "Medium; temporary preloader initially displayed Instant"
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 77031,
+      "captureWindowWithinLimit": true,
+      "interventions": 1,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "surface-1",
+          "url": "https://support.apple.com/en-us/111834",
+          "title": "Apple — AirPods Pro 2 (USB-C) technical specifications",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-2",
+          "url": "https://support.apple.com/en-gb/105046",
+          "title": "Apple — Sweat and water resistance guidance",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-3",
+          "url": "https://electronics.sony.com/audio/headphones/truly-wireless-earbuds/p/wf1000xm5-b",
+          "title": "Sony — WF-1000XM5 official product specifications",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-4",
+          "url": "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-1000xm5/articles/00268282",
+          "title": "Sony — Moisture and charging precautions",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "apple-audio",
+          "url": "https://support.apple.com/en-us/105046",
+          "title": "Apple AirPods water resistance",
+          "locator": "USB-C and Lightning model lists; swimming and drying cautions",
+          "kind": "OFFICIAL",
+          "origin": "REFERENCE_CHECK"
+        },
+        {
+          "id": "sony-audio",
+          "url": "https://helpguide.sony.net/mdr/2963/v1/en/contents/TP1000781399.html",
+          "title": "Sony WF-1000XM5 water resistance",
+          "locator": "On water resistant performance of the headset",
+          "kind": "OFFICIAL",
+          "origin": "REFERENCE_CHECK"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "chatgpt-rv-i-01",
+      "taskId": "RV-I-01",
+      "surface": "ChatGPT",
+      "status": "OBSERVED",
+      "note": "The answer correctly compared the home against 0.7 m front and 0.5 m above clearance, 2.4 GHz Wi-Fi and manual dirty-water maintenance. It retained the exact official manual and an actionable unresolved-conditions list. No export was produced. Protocol deviation: the capture window was 135.320 seconds, including a hydration repair and collector work; completion within 120 seconds is unconfirmed.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "EXISTING_ACCOUNT_TEMPORARY_CHAT",
+        "model": null,
+        "productBuild": null,
+        "visibleEffort": "Medium; temporary preloader initially displayed Instant"
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": true,
+      "export": false,
+      "evidenceSources": 1,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 135320,
+      "captureWindowWithinLimit": false,
+      "interventions": 1,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "roborock-manual",
+          "url": "https://support.roborock.com/hc/en-us/article_attachments/17820920870809",
+          "title": "official S8 Pro Ultra user manual",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "OFFICIAL",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-2",
+          "url": "https://support.roborock.com/hc/en-us/articles/33954114436761-What-is-the-difference-among-of-S8-Pro-Ultra-S8-Max-Ultra-and-S8-MaxV-Ultra",
+          "title": "Roborock model and automatic dock comparison",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-3",
+          "url": "https://support.roborock.com/hc/en-us/articles/6569442771353-What-should-I-do-if-the-docking-station-doesn-t-wash-mop-when-robot-returns-to-dock",
+          "title": "Roborock dock troubleshooting and tank checks",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "chatgpt-rv-v-01",
+      "taskId": "RV-V-01",
+      "surface": "ChatGPT",
+      "status": "OBSERVED",
+      "note": "The answer rejected the unchanged-installation claim, correctly separated sufficient overhead from insufficient front space, and retained the exact official manual with printed page references. Wi-Fi and dirty-water requirements were correct. It reported no export. The result is bounded to the frozen facts and criteria, not a full installation certification.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "EXISTING_ACCOUNT_TEMPORARY_CHAT",
+        "model": null,
+        "productBuild": null,
+        "visibleEffort": "Medium; temporary preloader initially displayed Instant"
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": true,
+      "export": false,
+      "evidenceSources": 1,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 87962,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "roborock-manual",
+          "url": "https://support.roborock.com/hc/en-us/article_attachments/17820920870809",
+          "title": "S8 Pro Ultra user manual (PDF)",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "OFFICIAL",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-2",
+          "url": "https://support.roborock.com/hc/en-us/articles/18481293573529-Where-should-I-position-my-device",
+          "title": "Roborock dock placement guidance",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-3",
+          "url": "https://support.roborock.com/hc/en-us/articles/360035369812-What-should-I-do-when-Wi-Fi-connection-fails-or-robot-shows-as-offline-in-app",
+          "title": "Roborock Wi-Fi troubleshooting",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "chatgpt-sw-i-01",
+      "taskId": "SW-I-01",
+      "surface": "ChatGPT",
+      "status": "OBSERVED",
+      "note": "The answer correctly distinguished 50 m and 100 m resistance ratings from supported activities, excluded Series 10 for 30 m scuba use, and retained the Ultra 40 m limit and exact Apple water-use guide. It asked about a depth logger versus a dive computer and retained app, band and condition questions. A real Markdown decision note was generated, downloaded, read and hashed. Only the four frozen facts and three criteria were assessed; extra snorkeling, app and product claims were not comprehensively audited.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "EXISTING_ACCOUNT_TEMPORARY_CHAT",
+        "model": null,
+        "productBuild": null,
+        "visibleEffort": "Medium; temporary preloader initially displayed Instant"
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": true,
+      "export": true,
+      "evidenceSources": 1,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 91215,
+      "captureWindowWithinLimit": true,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "surface-1",
+          "url": "https://support.apple.com/en-la/121202",
+          "title": "Series 10 specifications",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-2",
+          "url": "https://support.apple.com/en-euro/111832",
+          "title": "Ultra 2 specifications",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "apple-watch",
+          "url": "https://support.apple.com/en-us/109522",
+          "title": "Water resistance guidance",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "OFFICIAL",
+          "origin": "SURFACE"
+        }
+      ],
+      "artifact": {
+        "path": "artifacts/chatgpt-sw-i-01.md",
+        "sha256": "f564dff70519214f7b999a12966dba868f9127aefb28d9e41424c20fca99bdc0",
+        "bytes": 2351,
+        "mediaType": "text/markdown",
+        "provenance": "PLATFORM_EXPORT",
+        "savedAt": "2026-10-30T00:21:38.194Z"
+      }
+    },
+    {
+      "observationId": "chatgpt-sw-s-01",
+      "taskId": "SW-S-01",
+      "surface": "ChatGPT",
+      "status": "OBSERVED",
+      "note": "The answer correctly shortlisted Ultra 2 conditionally for both requirements and excluded Series 10 for scuba, with the four required ratings and activity limits. It asked about accepting a third-party dive app and related subscription. The Apple guide URL omitted the regional path, so the exact-reference gate is withheld. No export was created, despite the same surface producing a file in the preceding independent task. The page displayed a generic error alert beside a complete answer; no retry was attempted. Protocol deviation: capture occurred after 227.279 seconds, including collector work and a context handoff. Completion within 120 seconds is unconfirmed; this is not model-only latency.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "EXISTING_ACCOUNT_TEMPORARY_CHAT",
+        "model": null,
+        "productBuild": null,
+        "visibleEffort": "Medium; temporary preloader initially displayed Instant"
+      },
+      "answer": true,
+      "discovery": true,
+      "completion": false,
+      "export": false,
+      "evidenceSources": 0,
+      "facts": {
+        "CORRECT": 4,
+        "INCORRECT": 0,
+        "MISSING": 0,
+        "UNCHECKABLE": 0,
+        "UNSCORED": 0
+      },
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 227279,
+      "captureWindowWithinLimit": false,
+      "interventions": 0,
+      "costUsd": null,
+      "sources": [
+        {
+          "id": "surface-1",
+          "url": "https://support.apple.com/121202",
+          "title": "Series 10 technical specifications",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-2",
+          "url": "https://support.apple.com/111832",
+          "title": "Ultra 2 technical specifications",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-3",
+          "url": "https://support.apple.com/109522",
+          "title": "Apple Watch water-resistance guidance",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "surface-4",
+          "url": "https://support.apple.com/en-lb/guide/watch/apdd1a0ae6f4/watchos",
+          "title": "Depth app capabilities and limits",
+          "locator": "Visible response, source list or downloaded decision note",
+          "kind": "DISCOVERY",
+          "origin": "SURFACE"
+        },
+        {
+          "id": "apple-watch",
+          "url": "https://support.apple.com/en-us/109522",
+          "title": "Apple Watch water resistance",
+          "locator": "Water-resistance ratings and permitted water activities",
+          "kind": "OFFICIAL",
+          "origin": "REFERENCE_CHECK"
+        }
+      ],
+      "artifact": null
+    },
+    {
+      "observationId": "tiktok-wa-i-01",
+      "taskId": "WA-I-01",
+      "surface": "TikTok Search",
+      "status": "BLOCKED",
+      "note": "One session-wide access preflight found a login prompt followed by a birthday form on the guest route. No age information was entered and no research prompt was submitted. This planned slot inherits that observed access block; it is not a failed answer.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT_AGE_ENTRY_REQUIRED",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": null,
+      "discovery": null,
+      "completion": null,
+      "export": null,
+      "evidenceSources": null,
+      "facts": null,
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": 142977,
+      "captureWindowWithinLimit": null,
+      "interventions": 1,
+      "costUsd": null,
+      "sources": [],
+      "artifact": null
+    },
+    {
+      "observationId": "tiktok-wa-c-01",
+      "taskId": "WA-C-01",
+      "surface": "TikTok Search",
+      "status": "BLOCKED",
+      "note": "One session-wide access preflight found a login prompt followed by a birthday form on the guest route. No age information was entered and no research prompt was submitted. This planned slot inherits that observed access block; it is not a failed answer.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT_AGE_ENTRY_REQUIRED",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": null,
+      "discovery": null,
+      "completion": null,
+      "export": null,
+      "evidenceSources": null,
+      "facts": null,
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": null,
+      "captureWindowWithinLimit": null,
+      "interventions": null,
+      "costUsd": null,
+      "sources": [],
+      "artifact": null
+    },
+    {
+      "observationId": "tiktok-rv-i-01",
+      "taskId": "RV-I-01",
+      "surface": "TikTok Search",
+      "status": "BLOCKED",
+      "note": "One session-wide access preflight found a login prompt followed by a birthday form on the guest route. No age information was entered and no research prompt was submitted. This planned slot inherits that observed access block; it is not a failed answer.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT_AGE_ENTRY_REQUIRED",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": null,
+      "discovery": null,
+      "completion": null,
+      "export": null,
+      "evidenceSources": null,
+      "facts": null,
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": null,
+      "captureWindowWithinLimit": null,
+      "interventions": null,
+      "costUsd": null,
+      "sources": [],
+      "artifact": null
+    },
+    {
+      "observationId": "tiktok-rv-v-01",
+      "taskId": "RV-V-01",
+      "surface": "TikTok Search",
+      "status": "BLOCKED",
+      "note": "One session-wide access preflight found a login prompt followed by a birthday form on the guest route. No age information was entered and no research prompt was submitted. This planned slot inherits that observed access block; it is not a failed answer.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT_AGE_ENTRY_REQUIRED",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": null,
+      "discovery": null,
+      "completion": null,
+      "export": null,
+      "evidenceSources": null,
+      "facts": null,
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": null,
+      "captureWindowWithinLimit": null,
+      "interventions": null,
+      "costUsd": null,
+      "sources": [],
+      "artifact": null
+    },
+    {
+      "observationId": "tiktok-sw-i-01",
+      "taskId": "SW-I-01",
+      "surface": "TikTok Search",
+      "status": "BLOCKED",
+      "note": "One session-wide access preflight found a login prompt followed by a birthday form on the guest route. No age information was entered and no research prompt was submitted. This planned slot inherits that observed access block; it is not a failed answer.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT_AGE_ENTRY_REQUIRED",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": null,
+      "discovery": null,
+      "completion": null,
+      "export": null,
+      "evidenceSources": null,
+      "facts": null,
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": null,
+      "captureWindowWithinLimit": null,
+      "interventions": null,
+      "costUsd": null,
+      "sources": [],
+      "artifact": null
+    },
+    {
+      "observationId": "tiktok-sw-s-01",
+      "taskId": "SW-S-01",
+      "surface": "TikTok Search",
+      "status": "BLOCKED",
+      "note": "One session-wide access preflight found a login prompt followed by a birthday form on the guest route. No age information was entered and no research prompt was submitted. This planned slot inherits that observed access block; it is not a failed answer.",
+      "environment": {
+        "browser": "Codex in-app desktop browser",
+        "accountState": "SIGNED_OUT_AGE_ENTRY_REQUIRED",
+        "model": null,
+        "productBuild": null
+      },
+      "answer": null,
+      "discovery": null,
+      "completion": null,
+      "export": null,
+      "evidenceSources": null,
+      "facts": null,
+      "independentReview": false,
+      "disagreement": false,
+      "adjudicated": false,
+      "elapsedMs": null,
+      "captureWindowWithinLimit": null,
+      "interventions": null,
+      "costUsd": null,
+      "sources": [],
+      "artifact": null
+    }
+  ]
+}

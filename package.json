@@ -12,7 +12,7 @@
     "dev": "vite",
     "build": "vite build",
     "typecheck": "tsc --noEmit",
-    "test": "node scripts/check-release.mjs && node --test scripts/research-round.test.mjs scripts/research-ledger.test.mjs",
+    "test": "node scripts/check-release.mjs && node scripts/check-round-ledger.mjs && node --test scripts/research-round.test.mjs scripts/research-ledger.test.mjs",
     "test:round": "node --test scripts/research-round.test.mjs scripts/research-ledger.test.mjs",
     "check": "pnpm typecheck && pnpm build && pnpm test"
   },

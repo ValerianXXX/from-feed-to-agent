@@ -130,14 +130,15 @@ function outcome(row, state, catalog) {
   const supports = code?.facts.every(f => catalog.facts.find(g => g.id === f.id).sourceIds.every(id => surfaceOfficial.has(catalog.sources.find(s => s.id === id).url)));
   const completed = code ? row.answerVisible && row.deliverableVisible && supports && code.facts.every(f => f.verdict === 'CORRECT') && code.criteria.every(c => c.verdict === 'PASS') : null;
   const independentlyCoded = codes.some(c => c.coder.kind === 'INDEPENDENT_HUMAN') && new Set(codes.map(c => c.coder.id)).size >= 2;
+  const elapsedMs = row.timing.startedAt === null ? null : Date.parse(row.timing.finishedAt) - Date.parse(row.timing.startedAt);
   return { observationId: row.id, taskId: row.taskId, surface: row.surface, status: row.status, note: row.note, environment: row.environment,
     answer: unavailable ? null : row.answerVisible, discovery: unavailable ? null : row.sources.some(s => s.origin === 'SURFACE'),
     completion: unavailable ? null : completed, export: unavailable ? null : row.artifact !== null,
     evidenceSources: unavailable ? null : surfaceOfficial.size,
     facts: code ? Object.fromEntries(['CORRECT','INCORRECT','MISSING','UNCHECKABLE','UNSCORED'].map(v => [v, code.facts.filter(f => f.verdict === v).length])) : null,
     independentReview: independentlyCoded, disagreement: conflict, adjudicated: Boolean(adjudication),
-    elapsedMs: row.timing.startedAt === null ? null : Date.parse(row.timing.finishedAt) - Date.parse(row.timing.startedAt),
-    interventions: row.interventions?.length ?? null, costUsd: row.cost.usd, sources: row.sources };
+    elapsedMs, captureWindowWithinLimit: elapsedMs === null || unavailable ? null : elapsedMs <= catalog.pilot.maxPerAttemptSeconds * 1000,
+    interventions: row.interventions?.length ?? null, costUsd: row.cost.usd, sources: row.sources, artifact: row.artifact };
 }
 export function summarize(events, catalog) {
   const state = readEvents(events, catalog);
@@ -154,6 +155,7 @@ export function summarize(events, catalog) {
         notRun: selected.filter(r => r.status === 'NOT_RUN').length, unrecorded: catalog.pilotTaskIds.length - selected.length,
         answer: measure('answer'), discovery: measure('discovery'), completion: measure('completion'), export: measure('export'),
         disagreements: selected.filter(r => r.disagreement).length, independentReviews: selected.filter(r => r.independentReview).length,
+        captureWindowExceeded: selected.filter(r => r.captureWindowWithinLimit === false).length,
         costUsd: selected.length === catalog.pilotTaskIds.length && selected.every(r => r.costUsd !== null) ? selected.reduce((n,r) => n + r.costUsd, 0) : null };
     }), observations: rows };
 }
