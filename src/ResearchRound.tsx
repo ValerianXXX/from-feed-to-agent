@@ -7,7 +7,7 @@ export function ResearchRound() {
   const metrics = summary.surfaces.find(row => row.surface === surface)!;
   const observations = run.observations.filter(row => row.surface === surface);
   const outcome = (value: { observed: number; yes: number }) => value.observed ? `${value.yes} / ${value.observed} observed` : "Not observed";
-  return <section className="section round-section" id="new-round" aria-labelledby="round-title">
+  return <section className="section round-section" id="round-2026-10-27" aria-labelledby="round-title">
     <div className="section-heading split-heading"><div><p className="eyebrow">New evidence · October 27, 2026</p><h2 id="round-title">An answer, a source and a completed task are different outcomes.</h2></div>
       <p>A small new pilot: 8 planned tasks across four surfaces, 5 submitted queries and 4 usable observations. Two new prompts cover two historical task cells. This is not a repeat of the full August study or a platform ranking.</p></div>
     <div className="round-filter"><label htmlFor="round-surface">Inspect a surface</label><select id="round-surface" value={surface} onChange={event => setSurface(event.target.value)}>{summary.surfaces.map(row => <option key={row.surface}>{row.surface}</option>)}</select></div>

@@ -4,6 +4,7 @@ import { ResearchExplorer } from "./ResearchExplorer";
 import { SurveyExplorer } from "./SurveyExplorer";
 import { ValidationPanel } from "./ValidationPanel";
 import { ResearchRound } from "./ResearchRound";
+import { OutcomeRound } from "./OutcomeRound";
 import { platforms, roadmap } from "./research-data";
 
 const fileUrl = (name: string) => `${import.meta.env.BASE_URL}downloads/${name}`;
@@ -55,6 +56,7 @@ export default function Home() {
         <div><span>04</span><strong>149</strong><small>survey submissions</small></div>
       </section>
 
+      <OutcomeRound />
       <ResearchRound />
 
       <section className="section thesis" id="findings">
