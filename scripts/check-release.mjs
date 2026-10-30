@@ -14,7 +14,7 @@ const forbidden = [
   ["from-feed-to-agent", "-sihan-xu"].join(""),
   ["c:", "\\users\\"].join(""),
 ];
-const textExtensions = new Set([".cjs", ".cff", ".css", ".csv", ".html", ".js", ".json", ".md", ".mjs", ".ts", ".tsx", ".txt", ".yml", ".yaml"]);
+const textExtensions = new Set([".cjs", ".cff", ".css", ".csv", ".html", ".js", ".json", ".jsonl", ".md", ".mjs", ".ts", ".tsx", ".txt", ".yml", ".yaml"]);
 const excluded = new Set([".git", "dist", "node_modules"]);
 
 async function walk(directory) {

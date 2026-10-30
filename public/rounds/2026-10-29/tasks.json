@@ -1,0 +1,861 @@
+{
+  "schema": "FEED_TASK_CATALOG_V2",
+  "roundId": "2026-10-29",
+  "historicalComparison": "NOT_DIRECTLY_COMPARABLE",
+  "sources": [
+    {
+      "id": "apple-audio",
+      "url": "https://support.apple.com/en-us/105046",
+      "title": "Apple AirPods water resistance",
+      "checkedOn": "2026-10-29",
+      "locator": "USB-C and Lightning model lists; swimming and drying cautions"
+    },
+    {
+      "id": "sony-audio",
+      "url": "https://helpguide.sony.net/mdr/2963/v1/en/contents/TP1000781399.html",
+      "title": "Sony WF-1000XM5 water resistance",
+      "checkedOn": "2026-10-29",
+      "locator": "On water resistant performance of the headset"
+    },
+    {
+      "id": "roborock-manual",
+      "url": "https://support.roborock.com/hc/en-us/article_attachments/17820920870809",
+      "title": "Roborock S8 Pro Ultra FCC English manual",
+      "checkedOn": "2026-10-29",
+      "locator": "Printed pages 8-9 and 12: dock placement, Wi-Fi and dirty-water tank"
+    },
+    {
+      "id": "apple-watch",
+      "url": "https://support.apple.com/en-us/109522",
+      "title": "Apple Watch water resistance",
+      "checkedOn": "2026-10-29",
+      "locator": "Water-resistance ratings and permitted water activities"
+    }
+  ],
+  "facts": [
+    {
+      "id": "wa-usbc",
+      "statement": "AirPods Pro 2 USB-C earbuds and case have an IP54 rating.",
+      "sourceIds": [
+        "apple-audio"
+      ]
+    },
+    {
+      "id": "wa-lightning",
+      "statement": "AirPods Pro 2 Lightning earbuds and case have an IPX4 rating.",
+      "sourceIds": [
+        "apple-audio"
+      ]
+    },
+    {
+      "id": "wa-sony-buds",
+      "statement": "Sony WF-1000XM5 earbuds have IPX4-equivalent splash protection.",
+      "sourceIds": [
+        "sony-audio"
+      ]
+    },
+    {
+      "id": "wa-sony-case",
+      "statement": "The WF-1000XM5 charging case is not water resistant.",
+      "sourceIds": [
+        "sony-audio"
+      ]
+    },
+    {
+      "id": "wa-no-swimming",
+      "statement": "Neither specified earbud model is intended for swimming or immersion.",
+      "sourceIds": [
+        "apple-audio",
+        "sony-audio"
+      ]
+    },
+    {
+      "id": "rv-front",
+      "statement": "S8 Pro Ultra dock placement requires at least 0.7 m of free space in front.",
+      "sourceIds": [
+        "roborock-manual"
+      ]
+    },
+    {
+      "id": "rv-above",
+      "statement": "Dock placement requires at least 0.5 m of free space above.",
+      "sourceIds": [
+        "roborock-manual"
+      ]
+    },
+    {
+      "id": "rv-wifi",
+      "statement": "The S8 Pro Ultra supports only 2.4 GHz Wi-Fi.",
+      "sourceIds": [
+        "roborock-manual"
+      ]
+    },
+    {
+      "id": "rv-dirty",
+      "statement": "The owner must empty and clean the dirty-water tank as needed.",
+      "sourceIds": [
+        "roborock-manual"
+      ]
+    },
+    {
+      "id": "sw-series",
+      "statement": "Apple Watch Series 2 and later have a 50 m water-resistance rating.",
+      "sourceIds": [
+        "apple-watch"
+      ]
+    },
+    {
+      "id": "sw-ultra",
+      "statement": "Apple Watch Ultra and later have a 100 m water-resistance rating.",
+      "sourceIds": [
+        "apple-watch"
+      ]
+    },
+    {
+      "id": "sw-shallow",
+      "statement": "Series 2 and later support shallow-water swimming; that rating does not authorize scuba diving.",
+      "sourceIds": [
+        "apple-watch"
+      ]
+    },
+    {
+      "id": "sw-dive",
+      "statement": "Ultra models support recreational scuba diving to 40 m; the rating is not the permitted diving depth.",
+      "sourceIds": [
+        "apple-watch"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "WA-I-01",
+      "historicalCell": "WA-I-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Wireless Audio",
+      "stage": "Inspiration",
+      "pilot": true,
+      "prompt": "Consider only AirPods Pro 2 with the USB-C case and Sony WF-1000XM5 for a synthetic shopper who walks in rain and also swims. Do not recommend either for swimming. Identify the two useful rain-use trade-offs and one question to ask the shopper. Explicitly report the earbuds and case protection ratings and the swimming limit. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "wa-usbc",
+        "wa-sony-buds",
+        "wa-sony-case",
+        "wa-no-swimming"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Identify the two useful rain-use trade-offs and one question to ask the shopper."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "WA-I-02",
+      "historicalCell": "WA-I-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Wireless Audio",
+      "stage": "Inspiration",
+      "pilot": false,
+      "prompt": "Consider only AirPods Pro 2 with the USB-C case and Sony WF-1000XM5 for a synthetic shopper who walks in rain and also swims. Do not recommend either for swimming. Discover what to check when buying a used unit; distinguish the USB-C case from Lightning. Explicitly report the earbuds and case protection ratings and the swimming limit. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "wa-usbc",
+        "wa-sony-buds",
+        "wa-sony-case",
+        "wa-no-swimming",
+        "wa-lightning"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Discover what to check when buying a used unit; distinguish the USB-C case from Lightning."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "WA-C-01",
+      "historicalCell": "WA-C-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Wireless Audio",
+      "stage": "Comparison",
+      "pilot": true,
+      "prompt": "Consider only AirPods Pro 2 with the USB-C case and Sony WF-1000XM5 for a synthetic shopper who walks in rain and also swims. Do not recommend either for swimming. Compare the earbuds and cases separately, including their protection ratings and swimming limitation. Explicitly report the earbuds and case protection ratings and the swimming limit. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "wa-usbc",
+        "wa-sony-buds",
+        "wa-sony-case",
+        "wa-no-swimming"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Compare the earbuds and cases separately, including their protection ratings and swimming limitation."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "WA-C-02",
+      "historicalCell": "WA-C-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Wireless Audio",
+      "stage": "Comparison",
+      "pilot": false,
+      "prompt": "Consider only AirPods Pro 2 with the USB-C case and Sony WF-1000XM5 for a synthetic shopper who walks in rain and also swims. Do not recommend either for swimming. Compare the USB-C and Lightning AirPods Pro 2 variants, then explain the Sony case limitation. Explicitly report the earbuds and case protection ratings and the swimming limit. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "wa-usbc",
+        "wa-sony-buds",
+        "wa-sony-case",
+        "wa-no-swimming",
+        "wa-lightning"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Compare the USB-C and Lightning AirPods Pro 2 variants, then explain the Sony case limitation."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "WA-V-01",
+      "historicalCell": "WA-V-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Wireless Audio",
+      "stage": "Validation",
+      "pilot": false,
+      "prompt": "Consider only AirPods Pro 2 with the USB-C case and Sony WF-1000XM5 for a synthetic shopper who walks in rain and also swims. Do not recommend either for swimming. Check the claim that the Sony charging case has the same IPX4 protection as its earbuds. Explicitly report the earbuds and case protection ratings and the swimming limit. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "wa-usbc",
+        "wa-sony-buds",
+        "wa-sony-case",
+        "wa-no-swimming"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Check the claim that the Sony charging case has the same IPX4 protection as its earbuds."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "WA-V-02",
+      "historicalCell": "WA-V-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Wireless Audio",
+      "stage": "Validation",
+      "pilot": false,
+      "prompt": "Consider only AirPods Pro 2 with the USB-C case and Sony WF-1000XM5 for a synthetic shopper who walks in rain and also swims. Do not recommend either for swimming. Check the claim that an IP54 AirPods Pro 2 USB-C rating makes it a swimming headset. Explicitly report the earbuds and case protection ratings and the swimming limit. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "wa-usbc",
+        "wa-sony-buds",
+        "wa-sony-case",
+        "wa-no-swimming"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Check the claim that an IP54 AirPods Pro 2 USB-C rating makes it a swimming headset."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "WA-S-01",
+      "historicalCell": "WA-S-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Wireless Audio",
+      "stage": "Shortlist Formation",
+      "pilot": false,
+      "prompt": "Consider only AirPods Pro 2 with the USB-C case and Sony WF-1000XM5 for a synthetic shopper who walks in rain and also swims. Do not recommend either for swimming. Make a conditional shortlist for rainy walks, keep the swimming requirement unresolved, and list one question before purchase. Explicitly report the earbuds and case protection ratings and the swimming limit. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "wa-usbc",
+        "wa-sony-buds",
+        "wa-sony-case",
+        "wa-no-swimming"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Make a conditional shortlist for rainy walks, keep the swimming requirement unresolved, and list one question before purchase."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "WA-S-02",
+      "historicalCell": "WA-S-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Wireless Audio",
+      "stage": "Shortlist Formation",
+      "pilot": false,
+      "prompt": "Consider only AirPods Pro 2 with the USB-C case and Sony WF-1000XM5 for a synthetic shopper who walks in rain and also swims. Do not recommend either for swimming. Create a handoff checklist for a second shopper to verify model variant, case protection and intended water use. Explicitly report the earbuds and case protection ratings and the swimming limit. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "wa-usbc",
+        "wa-sony-buds",
+        "wa-sony-case",
+        "wa-no-swimming"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Create a handoff checklist for a second shopper to verify model variant, case protection and intended water use."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "RV-I-01",
+      "historicalCell": "RV-I-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Robot Vacuums",
+      "stage": "Inspiration",
+      "pilot": true,
+      "prompt": "Consider a Roborock S8 Pro Ultra for a synthetic home. The proposed dock alcove has 0.6 m free in front and 0.6 m free above; the router offers only 5 GHz. The owner expects no manual dirty-water work. Identify the setup and maintenance checks needed before buying; explain why an automatic dock does not settle suitability. Explicitly report front and above clearance, Wi-Fi band support and dirty-water maintenance. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "rv-front",
+        "rv-above",
+        "rv-wifi",
+        "rv-dirty"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Identify the setup and maintenance checks needed before buying; explain why an automatic dock does not settle suitability."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "RV-I-02",
+      "historicalCell": "RV-I-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Robot Vacuums",
+      "stage": "Inspiration",
+      "pilot": false,
+      "prompt": "Consider a Roborock S8 Pro Ultra for a synthetic home. The proposed dock alcove has 0.6 m free in front and 0.6 m free above; the router offers only 5 GHz. The owner expects no manual dirty-water work. Discover which home changes would need checking and which requirements should remain unresolved. Explicitly report front and above clearance, Wi-Fi band support and dirty-water maintenance. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "rv-front",
+        "rv-above",
+        "rv-wifi",
+        "rv-dirty"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Discover which home changes would need checking and which requirements should remain unresolved."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "RV-C-01",
+      "historicalCell": "RV-C-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Robot Vacuums",
+      "stage": "Comparison",
+      "pilot": false,
+      "prompt": "Consider a Roborock S8 Pro Ultra for a synthetic home. The proposed dock alcove has 0.6 m free in front and 0.6 m free above; the router offers only 5 GHz. The owner expects no manual dirty-water work. Compare the proposed alcove with another position having 0.8 m free in front and 0.6 m above; keep the router issue separate. Explicitly report front and above clearance, Wi-Fi band support and dirty-water maintenance. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "rv-front",
+        "rv-above",
+        "rv-wifi",
+        "rv-dirty"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Compare the proposed alcove with another position having 0.8 m free in front and 0.6 m above; keep the router issue separate."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "RV-C-02",
+      "historicalCell": "RV-C-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Robot Vacuums",
+      "stage": "Comparison",
+      "pilot": false,
+      "prompt": "Consider a Roborock S8 Pro Ultra for a synthetic home. The proposed dock alcove has 0.6 m free in front and 0.6 m free above; the router offers only 5 GHz. The owner expects no manual dirty-water work. Compare a zero-maintenance expectation with the owner tasks in the manual; do not invent a different product recommendation. Explicitly report front and above clearance, Wi-Fi band support and dirty-water maintenance. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "rv-front",
+        "rv-above",
+        "rv-wifi",
+        "rv-dirty"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Compare a zero-maintenance expectation with the owner tasks in the manual; do not invent a different product recommendation."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "RV-V-01",
+      "historicalCell": "RV-V-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Robot Vacuums",
+      "stage": "Validation",
+      "pilot": true,
+      "prompt": "Consider a Roborock S8 Pro Ultra for a synthetic home. The proposed dock alcove has 0.6 m free in front and 0.6 m free above; the router offers only 5 GHz. The owner expects no manual dirty-water work. Check the claim that this home can install the dock unchanged and never empty or clean the dirty-water tank. Explicitly report front and above clearance, Wi-Fi band support and dirty-water maintenance. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "rv-front",
+        "rv-above",
+        "rv-wifi",
+        "rv-dirty"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Check the claim that this home can install the dock unchanged and never empty or clean the dirty-water tank."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "RV-V-02",
+      "historicalCell": "RV-V-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Robot Vacuums",
+      "stage": "Validation",
+      "pilot": false,
+      "prompt": "Consider a Roborock S8 Pro Ultra for a synthetic home. The proposed dock alcove has 0.6 m free in front and 0.6 m free above; the router offers only 5 GHz. The owner expects no manual dirty-water work. Verify the claim that 5 GHz-only Wi-Fi and 0.6 m front clearance satisfy the official setup requirements. Explicitly report front and above clearance, Wi-Fi band support and dirty-water maintenance. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "rv-front",
+        "rv-above",
+        "rv-wifi",
+        "rv-dirty"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Verify the claim that 5 GHz-only Wi-Fi and 0.6 m front clearance satisfy the official setup requirements."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "RV-S-01",
+      "historicalCell": "RV-S-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Robot Vacuums",
+      "stage": "Shortlist Formation",
+      "pilot": false,
+      "prompt": "Consider a Roborock S8 Pro Ultra for a synthetic home. The proposed dock alcove has 0.6 m free in front and 0.6 m free above; the router offers only 5 GHz. The owner expects no manual dirty-water work. Decide whether to keep this model on a conditional shortlist, and list the exact unresolved changes before purchase. Explicitly report front and above clearance, Wi-Fi band support and dirty-water maintenance. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "rv-front",
+        "rv-above",
+        "rv-wifi",
+        "rv-dirty"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Decide whether to keep this model on a conditional shortlist, and list the exact unresolved changes before purchase."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "RV-S-02",
+      "historicalCell": "RV-S-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Robot Vacuums",
+      "stage": "Shortlist Formation",
+      "pilot": false,
+      "prompt": "Consider a Roborock S8 Pro Ultra for a synthetic home. The proposed dock alcove has 0.6 m free in front and 0.6 m free above; the router offers only 5 GHz. The owner expects no manual dirty-water work. Create a setup handoff checklist another household member can use without treating missing space or router support as solved. Explicitly report front and above clearance, Wi-Fi band support and dirty-water maintenance. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "rv-front",
+        "rv-above",
+        "rv-wifi",
+        "rv-dirty"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Create a setup handoff checklist another household member can use without treating missing space or router support as solved."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "SW-I-01",
+      "historicalCell": "SW-I-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Smart Wearables",
+      "stage": "Inspiration",
+      "pilot": true,
+      "prompt": "Consider only Apple Watch Series 10 and Ultra 2 for a synthetic shopper who swims in a pool and wants recreational scuba use to 30 m. This is a product-specification check, not diving training or a safety certification. Identify which water-use distinctions should guide the shopper and a question to clarify before purchase. Explicitly report both resistance ratings and the supported swimming and diving limits. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "sw-series",
+        "sw-ultra",
+        "sw-shallow",
+        "sw-dive"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Identify which water-use distinctions should guide the shopper and a question to clarify before purchase."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "SW-I-02",
+      "historicalCell": "SW-I-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Smart Wearables",
+      "stage": "Inspiration",
+      "pilot": false,
+      "prompt": "Consider only Apple Watch Series 10 and Ultra 2 for a synthetic shopper who swims in a pool and wants recreational scuba use to 30 m. This is a product-specification check, not diving training or a safety certification. Discover why the resistance rating alone is not a supported diving-depth specification. Explicitly report both resistance ratings and the supported swimming and diving limits. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "sw-series",
+        "sw-ultra",
+        "sw-shallow",
+        "sw-dive"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Discover why the resistance rating alone is not a supported diving-depth specification."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "SW-C-01",
+      "historicalCell": "SW-C-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Smart Wearables",
+      "stage": "Comparison",
+      "pilot": false,
+      "prompt": "Consider only Apple Watch Series 10 and Ultra 2 for a synthetic shopper who swims in a pool and wants recreational scuba use to 30 m. This is a product-specification check, not diving training or a safety certification. Compare their supported pool-swimming and scuba uses, distinguishing rating from permitted activity. Explicitly report both resistance ratings and the supported swimming and diving limits. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "sw-series",
+        "sw-ultra",
+        "sw-shallow",
+        "sw-dive"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Compare their supported pool-swimming and scuba uses, distinguishing rating from permitted activity."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "SW-C-02",
+      "historicalCell": "SW-C-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Smart Wearables",
+      "stage": "Comparison",
+      "pilot": false,
+      "prompt": "Consider only Apple Watch Series 10 and Ultra 2 for a synthetic shopper who swims in a pool and wants recreational scuba use to 30 m. This is a product-specification check, not diving training or a safety certification. Compare a pool-only requirement with the 30 m scuba requirement; avoid inferring unsupported safety or medical suitability. Explicitly report both resistance ratings and the supported swimming and diving limits. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "sw-series",
+        "sw-ultra",
+        "sw-shallow",
+        "sw-dive"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Compare a pool-only requirement with the 30 m scuba requirement; avoid inferring unsupported safety or medical suitability."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "SW-V-01",
+      "historicalCell": "SW-V-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Smart Wearables",
+      "stage": "Validation",
+      "pilot": false,
+      "prompt": "Consider only Apple Watch Series 10 and Ultra 2 for a synthetic shopper who swims in a pool and wants recreational scuba use to 30 m. This is a product-specification check, not diving training or a safety certification. Check the claim that a 50 m rating makes Series 10 suitable for recreational scuba at 30 m. Explicitly report both resistance ratings and the supported swimming and diving limits. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "sw-series",
+        "sw-ultra",
+        "sw-shallow",
+        "sw-dive"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Check the claim that a 50 m rating makes Series 10 suitable for recreational scuba at 30 m."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "SW-V-02",
+      "historicalCell": "SW-V-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Smart Wearables",
+      "stage": "Validation",
+      "pilot": false,
+      "prompt": "Consider only Apple Watch Series 10 and Ultra 2 for a synthetic shopper who swims in a pool and wants recreational scuba use to 30 m. This is a product-specification check, not diving training or a safety certification. Check the claim that Ultra 2 may be used for recreational scuba all the way to its 100 m resistance rating. Explicitly report both resistance ratings and the supported swimming and diving limits. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "sw-series",
+        "sw-ultra",
+        "sw-shallow",
+        "sw-dive"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Check the claim that Ultra 2 may be used for recreational scuba all the way to its 100 m resistance rating."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "SW-S-01",
+      "historicalCell": "SW-S-01",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Smart Wearables",
+      "stage": "Shortlist Formation",
+      "pilot": true,
+      "prompt": "Consider only Apple Watch Series 10 and Ultra 2 for a synthetic shopper who swims in a pool and wants recreational scuba use to 30 m. This is a product-specification check, not diving training or a safety certification. Produce a conditional shortlist for both requirements, clearly explaining any exclusion and an unresolved purchase question. Explicitly report both resistance ratings and the supported swimming and diving limits. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "sw-series",
+        "sw-ultra",
+        "sw-shallow",
+        "sw-dive"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Produce a conditional shortlist for both requirements, clearly explaining any exclusion and an unresolved purchase question."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    },
+    {
+      "id": "SW-S-02",
+      "historicalCell": "SW-S-02",
+      "promptOrigin": "NEW_PUBLIC_PROMPT",
+      "category": "Smart Wearables",
+      "stage": "Shortlist Formation",
+      "pilot": false,
+      "prompt": "Consider only Apple Watch Series 10 and Ultra 2 for a synthetic shopper who swims in a pool and wants recreational scuba use to 30 m. This is a product-specification check, not diving training or a safety certification. Create a handoff checklist that preserves the rating, activity limit, source and remaining uncertainty for another shopper. Explicitly report both resistance ratings and the supported swimming and diving limits. Use official sources. Give a compact decision note with the relevant facts, source links and unresolved conditions. If this surface supports a user-controlled export, save the note; otherwise say that no export was created. Do not invent prices, purchases or completed actions.",
+      "factIds": [
+        "sw-series",
+        "sw-ultra",
+        "sw-shallow",
+        "sw-dive"
+      ],
+      "criteria": [
+        {
+          "id": "decision",
+          "description": "Create a handoff checklist that preserves the rating, activity limit, source and remaining uncertainty for another shopper."
+        },
+        {
+          "id": "uncertainty",
+          "description": "The note preserves unresolved constraints and does not invent solved setup, purchase or water-use permissions."
+        },
+        {
+          "id": "handoff",
+          "description": "A self-contained decision note includes official source links next to its factual claims."
+        }
+      ]
+    }
+  ],
+  "pilotTaskIds": [
+    "WA-I-01",
+    "WA-C-01",
+    "RV-I-01",
+    "RV-V-01",
+    "SW-I-01",
+    "SW-S-01"
+  ],
+  "surfaces": [
+    "ChatGPT",
+    "Google AI Mode",
+    "YouTube Search",
+    "TikTok Search"
+  ],
+  "pilot": {
+    "repetitions": 1,
+    "plannedSlots": 24,
+    "maxSubmittedQueries": 24,
+    "maxPerAttemptSeconds": 120,
+    "maxSupplementalQueries": 0,
+    "maxNewPaidSpendUsd": 0,
+    "accountPolicy": "Existing access only; subscription-attributable cost remains unknown.",
+    "accessPolicy": "A visible session-wide verification or age gate may block the remaining slots with the same preflight reference. No bypass or account changes.",
+    "order": [
+      "Google AI Mode",
+      "YouTube Search",
+      "ChatGPT",
+      "TikTok Search"
+    ],
+    "searchBoundary": "Search pages only on YouTube and TikTok; no inferred video-content correctness.",
+    "secondRound": "Not part of this pilot; a formal repeat needs a separately frozen protocol and at least 72 hours."
+  }
+}
